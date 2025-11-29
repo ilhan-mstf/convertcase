@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Converti Maiuscole e Minuscole | Strumento di Testo Premium</title>
+    <meta name="description"
+        content="Converti facilmente il testo tra maiuscole, minuscole, caso frase, caso titolo e altro ancora. Uno strumento di testo semplice, gratuito e premium con statistiche in tempo reale.">
+    <link rel="alternate" hreflang="en" href="https://convertcase.net/" />
+    <link rel="alternate" hreflang="es" href="https://convertcase.net/es/" />
+    <link rel="alternate" hreflang="pt" href="https://convertcase.net/pt/" />
+    <link rel="alternate" hreflang="fr" href="https://convertcase.net/fr/" />
+    <link rel="alternate" hreflang="de" href="https://convertcase.net/de/" />
+    <link rel="alternate" hreflang="tr" href="https://convertcase.net/tr/" />
+    <link rel="alternate" hreflang="it" href="https://convertcase.net/it/" />
+    <link rel="alternate" hreflang="x-default" href="https://convertcase.net/" />
+
+    <meta name="keywords"
+        content="converti maiuscole, convertitore di testo, maiuscole, minuscole, caso titolo, caso frase, strumento di testo, conta parole, conta caratteri">
+    <meta name="author" content="Convert Case App">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://convertcase.net/it/">
+
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://convertcase.net/it/">
+    <meta property="og:title" content="Converti Maiuscole e Minuscole | Strumento di Testo Premium">
+    <meta property="og:description"
+        content="Converti facilmente il testo tra maiuscole, minuscole, caso frase, caso titolo e altro ancora.">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+    <div class="app-container">
+        <header class="app-header">
+            <h1>Converti Testo</h1>
+            <p>Lo strumento premium per tutte le tue esigenze di conversione del testo.</p>
+        </header>
+
+        <main class="converter-wrapper">
+            <div class="toolbar">
+                <button id="sentence" class="btn btn-primary" title="Converti in caso frase">Caso frase</button>
+                <button id="lower" class="btn btn-primary" title="Converti in minuscole">minuscole</button>
+                <button id="upper" class="btn btn-primary" title="Converti in MAIUSCOLE">MAIUSCOLE</button>
+                <button id="capitalized" class="btn btn-primary" title="Converti in Iniziali Maiuscole">Iniziali
+                    Maiuscole</button>
+                <button id="alternating" class="btn btn-primary" title="Converti in aLtErNaTo">aLtErNaTo</button>
+                <button id="title" class="btn btn-primary" title="Converti in Caso Titolo">Caso Titolo</button>
+                <button id="inverse" class="btn btn-primary" title="Converti in InVeRsO">InVeRsO</button>
+            </div>
+
+            <div class="input-area">
+                <textarea id="text-input" placeholder="Digita o incolla il tuo contenuto qui..."></textarea>
+            </div>
+
+            <div class="action-bar">
+                <div class="stats">
+                    <span id="char-count">0</span> Caratteri
+                    <span class="separator">|</span>
+                    <span id="word-count">0</span> Parole
+                    <span class="separator">|</span>
+                    <span id="sentence-count">0</span> Frasi
+                    <span class="separator">|</span>
+                    <span id="line-count">0</span> Righe
+                </div>
+                <div class="actions">
+                    <button id="download" class="btn btn-secondary" title="Scarica Testo">Scarica</button>
+                    <button id="copy" class="btn btn-secondary" title="Copia negli Appunti">Copia</button>
+                    <button id="clear" class="btn btn-danger" title="Cancella Testo">Cancella</button>
+                </div>
+            </div>
+        </main>
+
+        <section class="content-section">
+            <article>
+                <h2>Caso Frase</h2>
+                <p>Il convertitore di caso frase ti permetterà di incollare qualsiasi testo e lo trasformerà
+                    automaticamente in una frase strutturata. Funziona capitalizzando la prima lettera di ogni frase.
+                </p>
+            </article>
+
+            <article>
+                <h2>Minuscole</h2>
+                <p>Se ti stai chiedendo come rendere minuscolo un testo, questo è esattamente ciò che il convertitore di
+                    minuscole ti permette di fare: trasforma tutte le lettere del tuo testo in minuscole.</p>
+            </article>
+
+            <article>
+                <h2>Maiuscole</h2>
+                <p>Il trasformatore di maiuscole prenderà qualsiasi testo tu abbia e genererà tutte le lettere in
+                    maiuscolo.</p>
+            </article>
+
+            <article>
+                <h2>Iniziali Maiuscole</h2>
+                <p>Il convertitore di iniziali maiuscole convertirà automaticamente la lettera iniziale di ogni parola
+                    in maiuscolo e lascerà le lettere rimanenti in minuscolo.</p>
+            </article>
+
+            <article>
+                <h2>Caso Alternato</h2>
+                <p>Il convertitore di caso alternato ti permetterà di trasformare il tuo testo in testo che alterna tra
+                    minuscole e maiuscole.</p>
+            </article>
+
+            <article>
+                <h2>Caso Titolo</h2>
+                <p>Il convertitore di caso titolo è perfetto per assicurarsi che le lettere corrette siano maiuscole nel
+                    contesto di un titolo.</p>
+            </article>
+
+            <article>
+                <h2>Caso Inverso</h2>
+                <p>Il convertitore di caso inverso ti permetterà di invertire il caso del tuo testo.</p>
+            </article>
+        </section>
+
+        <footer class="app-footer">
+            <div class="language-switcher">
+                <select id="lang-selector" onchange="switchLanguage(this.value)">
+                    <option value="en">English</option>
+                    <option value="es">Español</option>
+                    <option value="pt">Português</option>
+                    <option value="fr">Français</option>
+                    <option value="de">Deutsch</option>
+                    <option value="tr">Türkçe</option>
+                    <option value="it" selected>Italiano</option>
+                </select>
+            </div>
+            <p>&copy; 2025 Convert Case App. Semplice. Chiaro. Potente.</p>
+        </footer>
+    </div>
+    <script>
+        function switchLanguage(lang) {
+            localStorage.setItem('manual_lang_switch', 'true');
+            if (lang === 'en') {
+                window.location.href = '../index.html';
+            } else {
+                window.location.href = '../' + lang + '/index.html';
+            }
+        }
+    </script>
+    <script src="../script.js"></script>
+</body>
+
+</html>

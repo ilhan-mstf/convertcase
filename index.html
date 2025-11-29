@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Convert Case | Premium Text Converter Tool</title>
+    <meta name="description"
+        content="Easily convert text between Upper Case, Lower Case, Sentence Case, Title Case and more. A simple, free, and premium text tool with real-time statistics.">
+    <link rel="alternate" hreflang="en" href="https://convertcase.net/" />
+    <link rel="alternate" hreflang="es" href="https://convertcase.net/es/" />
+    <link rel="alternate" hreflang="pt" href="https://convertcase.net/pt/" />
+    <link rel="alternate" hreflang="fr" href="https://convertcase.net/fr/" />
+    <link rel="alternate" hreflang="de" href="https://convertcase.net/de/" />
+    <link rel="alternate" hreflang="tr" href="https://convertcase.net/tr/" />
+    <link rel="alternate" hreflang="it" href="https://convertcase.net/it/" />
+    <link rel="alternate" hreflang="x-default" href="https://convertcase.net/" />
+
+    <script>
+        // Auto-redirect logic
+        (function () {
+            try {
+                var supportedLangs = ['es', 'pt', 'fr', 'de', 'tr', 'it'];
+                var userLang = (navigator.language || navigator.userLanguage).split('-')[0];
+                var currentPath = window.location.pathname;
+
+                // Check if already in a localized path (simple check)
+                var isLocalized = supportedLangs.some(l => currentPath.includes('/' + l + '/'));
+
+                if (!isLocalized && supportedLangs.includes(userLang) && !localStorage.getItem('manual_lang_switch')) {
+                    // Redirect to localized version
+                    // For local file testing, this might need adjustment, but for prod:
+                    // window.location.href = './' + userLang + '/'; 
+                    // We'll use a relative path that works for both if possible, or just assume web server
+                    var newUrl = window.location.href.replace(/\/index\.html$|\/$/, '') + '/' + userLang + '/index.html';
+                    window.location.replace(newUrl);
+                }
+            } catch (e) { console.error(e); }
+        })();
+    </script>
+    <meta name="keywords"
+        content="convert case, text converter, upper case, lower case, title case, sentence case, text tool, word count, character count, online text tool, change case">
+    <meta name="author" content="Convert Case App">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://example.com/">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://example.com/">
+    <meta property="og:title" content="Convert Case | Premium Text Converter Tool">
+    <meta property="og:description"
+        content="Easily convert text between Upper Case, Lower Case, Sentence Case, Title Case and more. A simple, free, and premium text tool with real-time statistics.">
+    <meta property="og:image" content="https://example.com/og-image.jpg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://example.com/">
+    <meta property="twitter:title" content="Convert Case | Premium Text Converter Tool">
+    <meta property="twitter:description"
+        content="Easily convert text between Upper Case, Lower Case, Sentence Case, Title Case and more. A simple, free, and premium text tool with real-time statistics.">
+    <meta property="twitter:image" content="https://example.com/twitter-image.jpg">
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "Convert Case",
+      "applicationCategory": "UtilityApplication",
+      "operatingSystem": "Any",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      },
+      "description": "A free online text tool to convert text between different letter cases: lower case, UPPER CASE, Sentence case, Capitalized Case, aLtErNaTiNg cAsE, Title Case, and InVeRsE CaSe."
+    }
+    </script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="app-container">
+        <header class="app-header">
+            <h1>Convert Case</h1>
+            <p>The premium tool for all your text conversion needs.</p>
+        </header>
+
+        <main class="converter-wrapper">
+            <div class="toolbar">
+                <button id="sentence" class="btn btn-primary" title="Convert to Sentence case">Sentence case</button>
+                <button id="lower" class="btn btn-primary" title="Convert to lower case">lower case</button>
+                <button id="upper" class="btn btn-primary" title="Convert to UPPER CASE">UPPER CASE</button>
+                <button id="capitalized" class="btn btn-primary" title="Convert to Capitalized Case">Capitalized
+                    Case</button>
+                <button id="alternating" class="btn btn-primary" title="Convert to aLtErNaTiNg cAsE">aLtErNaTiNg
+                    cAsE</button>
+                <button id="title" class="btn btn-primary" title="Convert to Title Case">Title Case</button>
+                <button id="inverse" class="btn btn-primary" title="Convert to InVeRsE CaSe">InVeRsE CaSe</button>
+            </div>
+
+            <div class="input-area">
+                <textarea id="text-input" placeholder="Type or paste your content here..."></textarea>
+            </div>
+
+            <div class="action-bar">
+                <div class="stats">
+                    <span id="char-count">0</span> Characters
+                    <span class="separator">|</span>
+                    <span id="word-count">0</span> Words
+                    <span class="separator">|</span>
+                    <span id="sentence-count">0</span> Sentences
+                    <span class="separator">|</span>
+                    <span id="line-count">0</span> Lines
+                </div>
+                <div class="actions">
+                    <button id="download" class="btn btn-secondary" title="Download Text">Download Text</button>
+                    <button id="copy" class="btn btn-secondary" title="Copy to Clipboard">Copy to Clipboard</button>
+                    <button id="clear" class="btn btn-danger" title="Clear Text">Clear</button>
+                </div>
+            </div>
+        </main>
+
+        <section class="content-section">
+            <article>
+                <h2>Sentence Case</h2>
+                <p>The sentence case converter will allow you to paste any text you’d like, and it will automatically
+                    transform it to a fully formed structured sentence. It works by capitalizing the very first letter
+                    in each sentence, and will then transform the rest of the text into lowercase as well as converting
+                    i’s into I’s. Every letter after a full stop will get converted into an upper case letter.</p>
+            </article>
+
+            <article>
+                <h2>Lower Case</h2>
+                <p>If you are wondering how to uncapitalize text, this is exactly what the lower case text converter
+                    will allow you to do - it transforms all the letters in your text into lowercase letters. Simply
+                    copy the text that you need generating into lower case and paste the text into the box above and
+                    select the ‘lower case’ tab.</p>
+            </article>
+
+            <article>
+                <h2>Upper Case</h2>
+                <p>The upper case transformer will take any text that you have and will generate all the letters into
+                    upper case ones. It will essentially make all lower case letters into CAPITALS (as well as keep
+                    upper case letters as upper case letters).</p>
+            </article>
+
+            <article>
+                <h2>Capitalized Case</h2>
+                <p>The capitalized case converter will automatically convert the starting letter of every word into an
+                    upper case and will leave the remaining letters as lower case ones.</p>
+            </article>
+
+            <article>
+                <h2>Alternating Case</h2>
+                <p>The alternating case converter will allow you to transform your text (no matter the current format)
+                    into text that alternates between lower case and upper case. It will generate a capital letter and
+                    then a lower case letter within the same word.</p>
+            </article>
+
+            <article>
+                <h2>Title Case</h2>
+                <p>The title case converter is perfect for those who are a bit unsure on how to title an upcoming essay.
+                    It essentially ensures the correct letters are capitalized within the context of a title. Words such
+                    as “an” will be left all in lower case and words that are important will be converted such as
+                    “Title”.</p>
+            </article>
+
+            <article>
+                <h2>Inverse Case</h2>
+                <p>The inverse case converter will allow you to inverse the case of your text. For example, if you have
+                    “Hello World”, it will convert it to “hELLO wORLD”.</p>
+            </article>
+        </section>
+
+        <footer class="app-footer">
+            <div class="language-switcher">
+                <select id="lang-selector" onchange="switchLanguage(this.value)">
+                    <option value="en" selected>English</option>
+                    <option value="es">Español</option>
+                    <option value="pt">Português</option>
+                    <option value="fr">Français</option>
+                    <option value="de">Deutsch</option>
+                    <option value="tr">Türkçe</option>
+                    <option value="it">Italiano</option>
+                </select>
+            </div>
+            <p>&copy; 2025 Convert Case App. Simple. Clear. Powerful.</p>
+        </footer>
+    </div>
+    <script>
+        function switchLanguage(lang) {
+            localStorage.setItem('manual_lang_switch', 'true');
+            if (lang === 'en') {
+                window.location.href = '../index.html';
+            } else {
+                // Handle switching from root
+                var basePath = window.location.href.includes('/index.html') ? window.location.href.replace('/index.html', '') : window.location.href.replace(/\/$/, '');
+                // If we are at root, we go into subdir. If we are in subdir, we go to sibling or parent.
+                // This logic is tricky with file:// vs http://
+                // Let's assume standard structure: root/index.html and root/es/index.html
+
+                if (window.location.pathname.endsWith('/uppercase/index.html') || window.location.pathname.endsWith('/uppercase/')) {
+                    window.location.href = './' + lang + '/index.html';
+                } else {
+                    // We are likely in a subdirectory already? No, this is the English page (root)
+                    window.location.href = './' + lang + '/index.html';
+                }
+            }
+        }
+    </script>
+    <script src="script.js"></script>
+</body>
+
+</html>
