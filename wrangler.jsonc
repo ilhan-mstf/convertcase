@@ -1,0 +1,7 @@
+{
+    "name": "convertcase",
+    "compatibility_date": "2025-11-29",
+    "assets": {
+        "directory": "." // <-- This tells Wrangler to use the root folder
+    }
+}
