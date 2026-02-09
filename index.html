@@ -482,20 +482,9 @@
         function switchLanguage(lang) {
             localStorage.setItem('manual_lang_switch', 'true');
             if (lang === 'en') {
-                window.location.href = '../index.html';
+                window.location.href = 'index.html';
             } else {
-                // Handle switching from root
-                var basePath = window.location.href.includes('/index.html') ? window.location.href.replace('/index.html', '') : window.location.href.replace(/\/$/, '');
-                // If we are at root, we go into subdir. If we are in subdir, we go to sibling or parent.
-                // This logic is tricky with file:// vs http://
-                // Let's assume standard structure: root/index.html and root/es/index.html
-
-                if (window.location.pathname.endsWith('/uppercase/index.html') || window.location.pathname.endsWith('/uppercase/')) {
-                    window.location.href = './' + lang + '/index.html';
-                } else {
-                    // We are likely in a subdirectory already? No, this is the English page (root)
-                    window.location.href = './' + lang + '/index.html';
-                }
+                window.location.href = './' + lang + '/index.html';
             }
         }
     </script>
