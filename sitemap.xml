@@ -1,81 +1,81 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://ilhan-mstf.github.io/convertcase/</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://ilhan-mstf.github.io/convertcase/"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://ilhan-mstf.github.io/convertcase/es/"/>
-    <xhtml:link rel="alternate" hreflang="pt" href="https://ilhan-mstf.github.io/convertcase/pt/"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://ilhan-mstf.github.io/convertcase/fr/"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://ilhan-mstf.github.io/convertcase/de/"/>
-    <xhtml:link rel="alternate" hreflang="tr" href="https://ilhan-mstf.github.io/convertcase/tr/"/>
-    <xhtml:link rel="alternate" hreflang="it" href="https://ilhan-mstf.github.io/convertcase/it/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://ilhan-mstf.github.io/convertcase/"/>
+    <loc>https://convertcase.fast-api.workers.dev/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://convertcase.fast-api.workers.dev/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://convertcase.fast-api.workers.dev/es/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://convertcase.fast-api.workers.dev/pt/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://convertcase.fast-api.workers.dev/fr/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://convertcase.fast-api.workers.dev/de/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://convertcase.fast-api.workers.dev/tr/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://convertcase.fast-api.workers.dev/it/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://convertcase.fast-api.workers.dev/"/>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://ilhan-mstf.github.io/convertcase/es/</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://ilhan-mstf.github.io/convertcase/"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://ilhan-mstf.github.io/convertcase/es/"/>
-    <xhtml:link rel="alternate" hreflang="pt" href="https://ilhan-mstf.github.io/convertcase/pt/"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://ilhan-mstf.github.io/convertcase/fr/"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://ilhan-mstf.github.io/convertcase/de/"/>
-    <xhtml:link rel="alternate" hreflang="tr" href="https://ilhan-mstf.github.io/convertcase/tr/"/>
-    <xhtml:link rel="alternate" hreflang="it" href="https://ilhan-mstf.github.io/convertcase/it/"/>
+    <loc>https://convertcase.fast-api.workers.dev/es/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://convertcase.fast-api.workers.dev/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://convertcase.fast-api.workers.dev/es/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://convertcase.fast-api.workers.dev/pt/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://convertcase.fast-api.workers.dev/fr/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://convertcase.fast-api.workers.dev/de/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://convertcase.fast-api.workers.dev/tr/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://convertcase.fast-api.workers.dev/it/"/>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://ilhan-mstf.github.io/convertcase/pt/</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://ilhan-mstf.github.io/convertcase/"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://ilhan-mstf.github.io/convertcase/es/"/>
-    <xhtml:link rel="alternate" hreflang="pt" href="https://ilhan-mstf.github.io/convertcase/pt/"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://ilhan-mstf.github.io/convertcase/fr/"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://ilhan-mstf.github.io/convertcase/de/"/>
-    <xhtml:link rel="alternate" hreflang="tr" href="https://ilhan-mstf.github.io/convertcase/tr/"/>
-    <xhtml:link rel="alternate" hreflang="it" href="https://ilhan-mstf.github.io/convertcase/it/"/>
+    <loc>https://convertcase.fast-api.workers.dev/pt/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://convertcase.fast-api.workers.dev/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://convertcase.fast-api.workers.dev/es/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://convertcase.fast-api.workers.dev/pt/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://convertcase.fast-api.workers.dev/fr/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://convertcase.fast-api.workers.dev/de/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://convertcase.fast-api.workers.dev/tr/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://convertcase.fast-api.workers.dev/it/"/>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://ilhan-mstf.github.io/convertcase/fr/</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://ilhan-mstf.github.io/convertcase/"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://ilhan-mstf.github.io/convertcase/es/"/>
-    <xhtml:link rel="alternate" hreflang="pt" href="https://ilhan-mstf.github.io/convertcase/pt/"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://ilhan-mstf.github.io/convertcase/fr/"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://ilhan-mstf.github.io/convertcase/de/"/>
-    <xhtml:link rel="alternate" hreflang="tr" href="https://ilhan-mstf.github.io/convertcase/tr/"/>
-    <xhtml:link rel="alternate" hreflang="it" href="https://ilhan-mstf.github.io/convertcase/it/"/>
+    <loc>https://convertcase.fast-api.workers.dev/fr/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://convertcase.fast-api.workers.dev/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://convertcase.fast-api.workers.dev/es/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://convertcase.fast-api.workers.dev/pt/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://convertcase.fast-api.workers.dev/fr/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://convertcase.fast-api.workers.dev/de/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://convertcase.fast-api.workers.dev/tr/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://convertcase.fast-api.workers.dev/it/"/>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://ilhan-mstf.github.io/convertcase/de/</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://ilhan-mstf.github.io/convertcase/"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://ilhan-mstf.github.io/convertcase/es/"/>
-    <xhtml:link rel="alternate" hreflang="pt" href="https://ilhan-mstf.github.io/convertcase/pt/"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://ilhan-mstf.github.io/convertcase/fr/"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://ilhan-mstf.github.io/convertcase/de/"/>
-    <xhtml:link rel="alternate" hreflang="tr" href="https://ilhan-mstf.github.io/convertcase/tr/"/>
-    <xhtml:link rel="alternate" hreflang="it" href="https://ilhan-mstf.github.io/convertcase/it/"/>
+    <loc>https://convertcase.fast-api.workers.dev/de/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://convertcase.fast-api.workers.dev/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://convertcase.fast-api.workers.dev/es/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://convertcase.fast-api.workers.dev/pt/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://convertcase.fast-api.workers.dev/fr/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://convertcase.fast-api.workers.dev/de/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://convertcase.fast-api.workers.dev/tr/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://convertcase.fast-api.workers.dev/it/"/>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://ilhan-mstf.github.io/convertcase/tr/</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://ilhan-mstf.github.io/convertcase/"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://ilhan-mstf.github.io/convertcase/es/"/>
-    <xhtml:link rel="alternate" hreflang="pt" href="https://ilhan-mstf.github.io/convertcase/pt/"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://ilhan-mstf.github.io/convertcase/fr/"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://ilhan-mstf.github.io/convertcase/de/"/>
-    <xhtml:link rel="alternate" hreflang="tr" href="https://ilhan-mstf.github.io/convertcase/tr/"/>
-    <xhtml:link rel="alternate" hreflang="it" href="https://ilhan-mstf.github.io/convertcase/it/"/>
+    <loc>https://convertcase.fast-api.workers.dev/tr/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://convertcase.fast-api.workers.dev/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://convertcase.fast-api.workers.dev/es/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://convertcase.fast-api.workers.dev/pt/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://convertcase.fast-api.workers.dev/fr/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://convertcase.fast-api.workers.dev/de/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://convertcase.fast-api.workers.dev/tr/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://convertcase.fast-api.workers.dev/it/"/>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://ilhan-mstf.github.io/convertcase/it/</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://ilhan-mstf.github.io/convertcase/"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://ilhan-mstf.github.io/convertcase/es/"/>
-    <xhtml:link rel="alternate" hreflang="pt" href="https://ilhan-mstf.github.io/convertcase/pt/"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://ilhan-mstf.github.io/convertcase/fr/"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://ilhan-mstf.github.io/convertcase/de/"/>
-    <xhtml:link rel="alternate" hreflang="tr" href="https://ilhan-mstf.github.io/convertcase/tr/"/>
-    <xhtml:link rel="alternate" hreflang="it" href="https://ilhan-mstf.github.io/convertcase/it/"/>
+    <loc>https://convertcase.fast-api.workers.dev/it/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://convertcase.fast-api.workers.dev/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://convertcase.fast-api.workers.dev/es/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://convertcase.fast-api.workers.dev/pt/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://convertcase.fast-api.workers.dev/fr/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://convertcase.fast-api.workers.dev/de/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://convertcase.fast-api.workers.dev/tr/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://convertcase.fast-api.workers.dev/it/"/>
     <priority>0.8</priority>
   </url>
 </urlset>

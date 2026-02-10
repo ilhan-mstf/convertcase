@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://ilhan-mstf.github.io/convertcase/sitemap.xml
+Sitemap: https://convertcase.fast-api.workers.dev/sitemap.xml
