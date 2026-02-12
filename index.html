@@ -45,7 +45,7 @@
     <link rel="manifest" href="manifest.json">
     <meta name="theme-color" content="#2563eb">
     <link rel="icon" type="image/svg+xml" href="icon.svg">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="assets/css/style.css">
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
@@ -80,10 +80,10 @@
     }
     </script>
 
-    <script src="script.js" defer></script>
+    <script src="assets/js/app.js" defer></script>
 </head>
 
-<body>
+<body data-toolset="case">
     <div class="app-container">
         <header class="app-header">
             <h1>Convert Case</h1>
@@ -196,6 +196,13 @@
         </section>
 
         <footer class="app-footer">
+            <div class="tool-directory" style="margin-bottom: 1rem;">
+                <a href="index.html">Case Converter</a> | 
+                <a href="remove-duplicate-lines/index.html">Remove Duplicate Lines</a> | 
+                <a href="remove-empty-lines/index.html">Remove Empty Lines</a> | 
+                <a href="slugify-text/index.html">Slugify Text</a> | 
+                <a href="extract-emails-urls/index.html">Extract Emails/URLs</a>
+            </div>
             <div class="language-switcher">
                 <select id="lang-selector" onchange="switchLanguage(this.value)" aria-label="Select Language">
                     <option value="en" selected>English</option>

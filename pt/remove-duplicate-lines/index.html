@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Remove Duplicate Lines Tool | Uppercase</title>
+    <meta name="description" content="Easily remove duplicate lines from your text or list. 100% private, client-side duplicate line remover.">
+    
+    <link rel="icon" type="image/svg+xml" href="../../icon.svg">
+    <link rel="stylesheet" href="../../assets/css/style.css">
+    <script src="../../assets/js/app.js" defer></script>
+</head>
+
+<body data-toolset="refiner" data-tool="remove-duplicate-lines">
+    <div class="app-container">
+        <header class="app-header">
+            <h1>Remove Duplicate Lines</h1>
+            <p>Clean up your lists and data by removing all duplicate entries instantly.</p>
+            <p class="privacy-notice">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-label="Privacy Lock Icon" role="img">
+                    <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+                    <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+                </svg>
+                Privacy focused - all conversions happen locally on your device.
+            </p>
+        </header>
+
+        <main class="converter-wrapper">
+            <div class="toolbar">
+                <button id="remove-duplicates" class="btn btn-primary">Remove Duplicate Lines</button>
+            </div>
+
+            <div class="input-area">
+                <textarea id="text-input" placeholder="Type or paste your content here..."></textarea>
+            </div>
+
+            <div class="action-bar">
+                <div class="stats">
+                    <span id="char-count">0</span> Characters
+                    <span class="separator">|</span>
+                    <span id="word-count">0</span> Words
+                    <span class="separator">|</span>
+                    <span id="sentence-count">0</span> Sentences
+                    <span class="separator">|</span>
+                    <span id="line-count">0</span> Lines
+                </div>
+                <div class="actions">
+                    <button id="download" class="btn btn-secondary" title="Download Text">Download Text</button>
+                    <button id="copy" class="btn btn-secondary" title="Copy to Clipboard">Copy to Clipboard</button>
+                    <button id="clear" class="btn btn-danger" title="Clear Text">Clear</button>
+                </div>
+            </div>
+        </main>
+
+        <section class="content-section">
+            <article><h2>How to Remove Duplicate Lines</h2><p>Simply paste your list into the text area above and click the 'Remove Duplicate Lines' button. Our tool will instantly scan your text and remove any line that appears more than once, keeping only the first occurrence.</p></article>
+        </section>
+
+        <footer class="app-footer">
+            <nav class="tool-directory">
+                <a href="../../index.html">Case Converter</a> | 
+                <a href="../../remove-duplicate-lines/index.html">Remove Duplicate Lines</a> | 
+                <a href="../../remove-empty-lines/index.html">Remove Empty Lines</a> | 
+                <a href="../../slugify-text/index.html">Slugify Text</a> | 
+                <a href="../../extract-emails-urls/index.html">Extract Emails/URLs</a>
+            </nav>
+            <p>&copy; 2025 Convert Case App. Simple. Clear. Powerful.</p>
+        </footer>
+    </div>
+</body>
+
+</html>

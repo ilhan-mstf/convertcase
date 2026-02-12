@@ -1,9 +1,8 @@
-const CaseConverter = {
+const TextProcessor = {
+    // Case Conversion Functions
     sentenceCase: (text, lang) => {
         let lowerText = text.toLocaleLowerCase(lang);
-        // Capitalize first letter of sentences
         lowerText = lowerText.replace(/(^\s*\w|[.!?]\s*\w)/g, c => c.toLocaleUpperCase(lang));
-        // English specific: Capitalize standalone 'i'
         if (lang === 'en') {
             lowerText = lowerText.replace(/\bi\b/g, 'I');
         }
@@ -20,8 +19,6 @@ const CaseConverter = {
 
     capitalizedCase: (text, lang) => {
         const lowerText = text.toLocaleLowerCase(lang);
-        // Use negative lookbehind to avoid capitalizing after apostrophes (fixes "It's")
-        // Supported in modern browsers and Node.js
         return lowerText.replace(/(?<!['\u2019])\b\w/g, c => c.toLocaleUpperCase(lang));
     },
 
@@ -45,7 +42,6 @@ const CaseConverter = {
     },
 
     titleCase: (text, lang) => {
-        // Small words for different languages
         const smallWordsMap = {
             'en': /^(a|an|and|as|at|but|by|en|for|if|in|nor|of|on|or|per|the|to|v\.?|vs\.?|via)$/i,
             'es': /^(a|ante|bajo|cabe|con|contra|de|desde|durante|en|entre|hacia|hasta|mediante|para|por|según|sin|so|sobre|tras|versus|via|el|la|los|las|un|una|unos|unas|y|o|pero|si|e|u)$/i,
@@ -55,25 +51,17 @@ const CaseConverter = {
             'tr': /^(ve|ile|de|da|ki|mi|mı|mu|mü|ama|fakat|lakin|veya|ya|yahut|ise|için|gibi|kadar|göre|diye|doğru|karşı|üzere|sanki|oysa|madem|belki|çünkü|zira|yoksa|ancak|yalnız|tek|bir|bu|şu|o)$/i,
             'it': /^(a|agli|ai|al|all|alla|alle|allo|con|da|dagli|dai|dal|dall|dalla|dalle|dallo|di|degli|dei|del|dell|della|delle|dello|e|ed|i|il|in|la|le|lo|ma|nei|nel|nell|nella|nelle|nello|o|od|per|se|su|sugli|sui|sul|sull|sulla|sulle|sullo|tra|fra|un|una|uno)$/i
         };
-
         const smallWords = smallWordsMap[lang] || smallWordsMap['en'];
-
         return text.replace(/[A-Za-z0-9\u00C0-\u00FF]+[^\s-]*/g, function (match, index, title) {
-            // Check if it's a small word and NOT at the beginning or end of the title
             if (index > 0 && index + match.length !== title.length &&
                 match.search(smallWords) > -1 && title.charAt(index - 2) !== ":" &&
                 (title.charAt(index + match.length) !== '-' || title.charAt(index - 1) === '-') &&
                 title.charAt(index - 1).search(/[^\s-]/) < 0) {
                 return match.toLocaleLowerCase(lang);
             }
-
-            // If it contains uppercase letters after the first one, or internal punctuation,
-            // we assume it's an acronym or special case (like iPhone) and leave it as is.
             if (match.substr(1).search(/[A-Z\u00C0-\u00FF]|\../) > -1) {
                 return match;
             }
-
-            // Otherwise, capitalize first letter and lowercase the rest
             return match.charAt(0).toLocaleUpperCase(lang) + match.substr(1).toLocaleLowerCase(lang);
         });
     },
@@ -91,11 +79,39 @@ const CaseConverter = {
         return newText;
     },
 
+    // Phase 1: Text Refiner Functions
+    removeDuplicateLines: (text) => {
+        const lines = text.split(/\r?\n/);
+        return Array.from(new Set(lines)).join('\n');
+    },
+
+    removeEmptyLines: (text) => {
+        return text.split(/\r?\n/).filter(line => line.trim() !== '').join('\n');
+    },
+
+    slugify: (text) => {
+        return text.toLowerCase()
+            .trim()
+            .replace(/[^\w\s-]/g, '')
+            .replace(/[\s_-]+/g, '-')
+            .replace(/^-+|-+$/g, '');
+    },
+
+    extractEntities: (text, type) => {
+        if (type === 'emails') {
+            const matches = text.match(/[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}/g);
+            return matches ? matches.join('\n') : '';
+        } else if (type === 'urls') {
+            const matches = text.match(/https?:\/\/[^\s/$.?#].[^\s]*/g);
+            return matches ? matches.join('\n') : '';
+        }
+        return text;
+    },
+
     getStats: (text) => {
         return {
             charCount: text.length,
             wordCount: text.trim() === '' ? 0 : text.trim().split(/\s+/).length,
-            // Matches . ! ? followed by space or end of string
             sentenceCount: text.trim() === '' ? 0 : text.split(/[.!?]+(\s|$)/).filter(s => s.trim().length > 0).length,
             lineCount: text === '' ? 0 : text.split(/\n/).length
         };
@@ -104,7 +120,7 @@ const CaseConverter = {
 
 // Export for Node.js testing
 if (typeof module !== 'undefined' && module.exports) {
-    module.exports = CaseConverter;
+    module.exports = TextProcessor;
 }
 
 if (typeof document !== 'undefined') {
@@ -119,82 +135,88 @@ if (typeof document !== 'undefined') {
         // Stats Update
         function updateStats() {
             const text = textInput.value;
-            const stats = CaseConverter.getStats(text);
-
+            const stats = TextProcessor.getStats(text);
             charCount.textContent = stats.charCount;
             wordCount.textContent = stats.wordCount;
             sentenceCount.textContent = stats.sentenceCount;
             lineCount.textContent = stats.lineCount;
         }
 
-        textInput.addEventListener('input', updateStats);
+        if (textInput) {
+            textInput.addEventListener('input', updateStats);
+        }
 
-        // Conversion Functions
         function setContent(newText) {
             textInput.value = newText;
             updateStats();
         }
 
-        document.getElementById('sentence').addEventListener('click', () => {
-            setContent(CaseConverter.sentenceCase(textInput.value, lang));
+        // Tool Initialization Logic
+        const toolset = document.body.getAttribute('data-toolset') || 'case';
+        const tool = document.body.getAttribute('data-tool');
+
+        // Mapping button IDs to functions
+        const buttonActions = {
+            'sentence': () => setContent(TextProcessor.sentenceCase(textInput.value, lang)),
+            'lower': () => setContent(TextProcessor.lowerCase(textInput.value, lang)),
+            'upper': () => setContent(TextProcessor.upperCase(textInput.value, lang)),
+            'capitalized': () => setContent(TextProcessor.capitalizedCase(textInput.value, lang)),
+            'alternating': () => setContent(TextProcessor.alternatingCase(textInput.value, lang)),
+            'title': () => setContent(TextProcessor.titleCase(textInput.value, lang)),
+            'inverse': () => setContent(TextProcessor.inverseCase(textInput.value, lang)),
+            
+            // Phase 1 tools
+            'remove-duplicates': () => setContent(TextProcessor.removeDuplicateLines(textInput.value)),
+            'remove-empty-lines': () => setContent(TextProcessor.removeEmptyLines(textInput.value)),
+            'slugify': () => setContent(TextProcessor.slugify(textInput.value)),
+            'extract-emails': () => setContent(TextProcessor.extractEntities(textInput.value, 'emails')),
+            'extract-urls': () => setContent(TextProcessor.extractEntities(textInput.value, 'urls'))
+        };
+
+        // Attach listeners to all present buttons that have a matching action
+        Object.keys(buttonActions).forEach(id => {
+            const btn = document.getElementById(id);
+            if (btn) {
+                btn.addEventListener('click', buttonActions[id]);
+            }
         });
 
-        document.getElementById('lower').addEventListener('click', () => {
-            setContent(CaseConverter.lowerCase(textInput.value, lang));
-        });
-
-        document.getElementById('upper').addEventListener('click', () => {
-            setContent(CaseConverter.upperCase(textInput.value, lang));
-        });
-
-        document.getElementById('capitalized').addEventListener('click', () => {
-            setContent(CaseConverter.capitalizedCase(textInput.value, lang));
-        });
-
-        document.getElementById('alternating').addEventListener('click', () => {
-            setContent(CaseConverter.alternatingCase(textInput.value, lang));
-        });
-
-        document.getElementById('title').addEventListener('click', () => {
-            setContent(CaseConverter.titleCase(textInput.value, lang));
-        });
-
-        document.getElementById('inverse').addEventListener('click', () => {
-            setContent(CaseConverter.inverseCase(textInput.value, lang));
-        });
-
-        // Actions
-        document.getElementById('download').addEventListener('click', () => {
-            const text = textInput.value;
-            if (!text) return;
-
-            const blob = new Blob([text], { type: 'text/plain' });
-            const url = window.URL.createObjectURL(blob);
-            const a = document.createElement('a');
-            a.href = url;
-            a.download = 'convertcase-text.txt';
-            document.body.appendChild(a);
-            a.click();
-            document.body.removeChild(a);
-            window.URL.revokeObjectURL(url);
-        });
-
-        document.getElementById('copy').addEventListener('click', () => {
-            const text = textInput.value;
-            if (!text) return;
-
-            navigator.clipboard.writeText(text).then(() => {
-                const btn = document.getElementById('copy');
-                const originalText = btn.textContent;
-                btn.textContent = 'Copied!';
-                setTimeout(() => {
-                    btn.textContent = originalText;
-                }, 2000);
+        // Global Actions
+        const downloadBtn = document.getElementById('download');
+        if (downloadBtn) {
+            downloadBtn.addEventListener('click', () => {
+                const text = textInput.value;
+                if (!text) return;
+                const blob = new Blob([text], { type: 'text/plain' });
+                const url = window.URL.createObjectURL(blob);
+                const a = document.createElement('a');
+                a.href = url;
+                a.download = (tool || 'convertcase') + '-text.txt';
+                document.body.appendChild(a);
+                a.click();
+                document.body.removeChild(a);
+                window.URL.revokeObjectURL(url);
             });
-        });
+        }
 
-        document.getElementById('clear').addEventListener('click', () => {
-            setContent('');
-        });
+        const copyBtn = document.getElementById('copy');
+        if (copyBtn) {
+            copyBtn.addEventListener('click', () => {
+                const text = textInput.value;
+                if (!text) return;
+                navigator.clipboard.writeText(text).then(() => {
+                    const originalText = copyBtn.textContent;
+                    copyBtn.textContent = 'Copied!';
+                    setTimeout(() => {
+                        copyBtn.textContent = originalText;
+                    }, 2000);
+                });
+            });
+        }
+
+        const clearBtn = document.getElementById('clear');
+        if (clearBtn) {
+            clearBtn.addEventListener('click', () => setContent(''));
+        }
     });
 }
