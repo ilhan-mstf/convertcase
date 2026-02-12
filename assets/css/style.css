@@ -67,14 +67,10 @@ body {
 
 .toolbar {
     display: flex;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     gap: 0.5rem;
     margin-bottom: 1.5rem;
     justify-content: center;
-    overflow-x: auto;
-    padding-bottom: 0.5rem;
-    /* Space for scrollbar if needed */
-    -webkit-overflow-scrolling: touch;
 }
 
 .btn {
@@ -255,9 +251,5 @@ textarea:focus {
 
     .actions {
         justify-content: center;
-    }
-
-    .toolbar {
-        justify-content: flex-start;
     }
 }
