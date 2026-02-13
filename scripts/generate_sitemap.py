@@ -2,7 +2,10 @@
 
 base_url = "https://convertcase.fast-api.workers.dev"
 langs = ["es", "pt", "fr", "de", "tr", "it"]
-tools = ["remove-duplicate-lines", "remove-empty-lines", "slugify-text", "extract-emails-urls"]
+tools = [
+    "remove-duplicate-lines", "remove-empty-lines", "slugify-text", "extract-emails-urls",
+    "json-prettifier-minifier", "base64-encode-decode", "json-yaml-converter", "html-entity-encoder-decoder"
+]
 
 print('<?xml version="1.0" encoding="UTF-8"?>')
 print('<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">')

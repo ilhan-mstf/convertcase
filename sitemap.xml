@@ -420,4 +420,340 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://convertcase.fast-api.workers.dev/extract-emails-urls/" />
     <priority>0.7</priority>
   </url>
+  <url>
+    <loc>https://convertcase.fast-api.workers.dev/json-prettifier-minifier/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://convertcase.fast-api.workers.dev/json-prettifier-minifier/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://convertcase.fast-api.workers.dev/es/json-prettifier-minifier/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://convertcase.fast-api.workers.dev/pt/json-prettifier-minifier/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://convertcase.fast-api.workers.dev/fr/json-prettifier-minifier/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://convertcase.fast-api.workers.dev/de/json-prettifier-minifier/" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://convertcase.fast-api.workers.dev/tr/json-prettifier-minifier/" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://convertcase.fast-api.workers.dev/it/json-prettifier-minifier/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://convertcase.fast-api.workers.dev/json-prettifier-minifier/" />
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://convertcase.fast-api.workers.dev/es/json-prettifier-minifier/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://convertcase.fast-api.workers.dev/json-prettifier-minifier/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://convertcase.fast-api.workers.dev/es/json-prettifier-minifier/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://convertcase.fast-api.workers.dev/pt/json-prettifier-minifier/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://convertcase.fast-api.workers.dev/fr/json-prettifier-minifier/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://convertcase.fast-api.workers.dev/de/json-prettifier-minifier/" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://convertcase.fast-api.workers.dev/tr/json-prettifier-minifier/" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://convertcase.fast-api.workers.dev/it/json-prettifier-minifier/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://convertcase.fast-api.workers.dev/json-prettifier-minifier/" />
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://convertcase.fast-api.workers.dev/pt/json-prettifier-minifier/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://convertcase.fast-api.workers.dev/json-prettifier-minifier/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://convertcase.fast-api.workers.dev/es/json-prettifier-minifier/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://convertcase.fast-api.workers.dev/pt/json-prettifier-minifier/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://convertcase.fast-api.workers.dev/fr/json-prettifier-minifier/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://convertcase.fast-api.workers.dev/de/json-prettifier-minifier/" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://convertcase.fast-api.workers.dev/tr/json-prettifier-minifier/" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://convertcase.fast-api.workers.dev/it/json-prettifier-minifier/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://convertcase.fast-api.workers.dev/json-prettifier-minifier/" />
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://convertcase.fast-api.workers.dev/fr/json-prettifier-minifier/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://convertcase.fast-api.workers.dev/json-prettifier-minifier/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://convertcase.fast-api.workers.dev/es/json-prettifier-minifier/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://convertcase.fast-api.workers.dev/pt/json-prettifier-minifier/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://convertcase.fast-api.workers.dev/fr/json-prettifier-minifier/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://convertcase.fast-api.workers.dev/de/json-prettifier-minifier/" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://convertcase.fast-api.workers.dev/tr/json-prettifier-minifier/" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://convertcase.fast-api.workers.dev/it/json-prettifier-minifier/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://convertcase.fast-api.workers.dev/json-prettifier-minifier/" />
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://convertcase.fast-api.workers.dev/de/json-prettifier-minifier/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://convertcase.fast-api.workers.dev/json-prettifier-minifier/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://convertcase.fast-api.workers.dev/es/json-prettifier-minifier/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://convertcase.fast-api.workers.dev/pt/json-prettifier-minifier/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://convertcase.fast-api.workers.dev/fr/json-prettifier-minifier/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://convertcase.fast-api.workers.dev/de/json-prettifier-minifier/" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://convertcase.fast-api.workers.dev/tr/json-prettifier-minifier/" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://convertcase.fast-api.workers.dev/it/json-prettifier-minifier/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://convertcase.fast-api.workers.dev/json-prettifier-minifier/" />
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://convertcase.fast-api.workers.dev/tr/json-prettifier-minifier/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://convertcase.fast-api.workers.dev/json-prettifier-minifier/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://convertcase.fast-api.workers.dev/es/json-prettifier-minifier/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://convertcase.fast-api.workers.dev/pt/json-prettifier-minifier/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://convertcase.fast-api.workers.dev/fr/json-prettifier-minifier/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://convertcase.fast-api.workers.dev/de/json-prettifier-minifier/" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://convertcase.fast-api.workers.dev/tr/json-prettifier-minifier/" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://convertcase.fast-api.workers.dev/it/json-prettifier-minifier/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://convertcase.fast-api.workers.dev/json-prettifier-minifier/" />
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://convertcase.fast-api.workers.dev/it/json-prettifier-minifier/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://convertcase.fast-api.workers.dev/json-prettifier-minifier/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://convertcase.fast-api.workers.dev/es/json-prettifier-minifier/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://convertcase.fast-api.workers.dev/pt/json-prettifier-minifier/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://convertcase.fast-api.workers.dev/fr/json-prettifier-minifier/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://convertcase.fast-api.workers.dev/de/json-prettifier-minifier/" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://convertcase.fast-api.workers.dev/tr/json-prettifier-minifier/" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://convertcase.fast-api.workers.dev/it/json-prettifier-minifier/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://convertcase.fast-api.workers.dev/json-prettifier-minifier/" />
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://convertcase.fast-api.workers.dev/base64-encode-decode/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://convertcase.fast-api.workers.dev/base64-encode-decode/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://convertcase.fast-api.workers.dev/es/base64-encode-decode/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://convertcase.fast-api.workers.dev/pt/base64-encode-decode/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://convertcase.fast-api.workers.dev/fr/base64-encode-decode/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://convertcase.fast-api.workers.dev/de/base64-encode-decode/" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://convertcase.fast-api.workers.dev/tr/base64-encode-decode/" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://convertcase.fast-api.workers.dev/it/base64-encode-decode/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://convertcase.fast-api.workers.dev/base64-encode-decode/" />
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://convertcase.fast-api.workers.dev/es/base64-encode-decode/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://convertcase.fast-api.workers.dev/base64-encode-decode/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://convertcase.fast-api.workers.dev/es/base64-encode-decode/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://convertcase.fast-api.workers.dev/pt/base64-encode-decode/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://convertcase.fast-api.workers.dev/fr/base64-encode-decode/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://convertcase.fast-api.workers.dev/de/base64-encode-decode/" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://convertcase.fast-api.workers.dev/tr/base64-encode-decode/" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://convertcase.fast-api.workers.dev/it/base64-encode-decode/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://convertcase.fast-api.workers.dev/base64-encode-decode/" />
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://convertcase.fast-api.workers.dev/pt/base64-encode-decode/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://convertcase.fast-api.workers.dev/base64-encode-decode/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://convertcase.fast-api.workers.dev/es/base64-encode-decode/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://convertcase.fast-api.workers.dev/pt/base64-encode-decode/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://convertcase.fast-api.workers.dev/fr/base64-encode-decode/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://convertcase.fast-api.workers.dev/de/base64-encode-decode/" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://convertcase.fast-api.workers.dev/tr/base64-encode-decode/" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://convertcase.fast-api.workers.dev/it/base64-encode-decode/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://convertcase.fast-api.workers.dev/base64-encode-decode/" />
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://convertcase.fast-api.workers.dev/fr/base64-encode-decode/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://convertcase.fast-api.workers.dev/base64-encode-decode/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://convertcase.fast-api.workers.dev/es/base64-encode-decode/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://convertcase.fast-api.workers.dev/pt/base64-encode-decode/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://convertcase.fast-api.workers.dev/fr/base64-encode-decode/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://convertcase.fast-api.workers.dev/de/base64-encode-decode/" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://convertcase.fast-api.workers.dev/tr/base64-encode-decode/" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://convertcase.fast-api.workers.dev/it/base64-encode-decode/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://convertcase.fast-api.workers.dev/base64-encode-decode/" />
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://convertcase.fast-api.workers.dev/de/base64-encode-decode/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://convertcase.fast-api.workers.dev/base64-encode-decode/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://convertcase.fast-api.workers.dev/es/base64-encode-decode/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://convertcase.fast-api.workers.dev/pt/base64-encode-decode/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://convertcase.fast-api.workers.dev/fr/base64-encode-decode/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://convertcase.fast-api.workers.dev/de/base64-encode-decode/" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://convertcase.fast-api.workers.dev/tr/base64-encode-decode/" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://convertcase.fast-api.workers.dev/it/base64-encode-decode/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://convertcase.fast-api.workers.dev/base64-encode-decode/" />
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://convertcase.fast-api.workers.dev/tr/base64-encode-decode/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://convertcase.fast-api.workers.dev/base64-encode-decode/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://convertcase.fast-api.workers.dev/es/base64-encode-decode/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://convertcase.fast-api.workers.dev/pt/base64-encode-decode/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://convertcase.fast-api.workers.dev/fr/base64-encode-decode/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://convertcase.fast-api.workers.dev/de/base64-encode-decode/" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://convertcase.fast-api.workers.dev/tr/base64-encode-decode/" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://convertcase.fast-api.workers.dev/it/base64-encode-decode/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://convertcase.fast-api.workers.dev/base64-encode-decode/" />
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://convertcase.fast-api.workers.dev/it/base64-encode-decode/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://convertcase.fast-api.workers.dev/base64-encode-decode/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://convertcase.fast-api.workers.dev/es/base64-encode-decode/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://convertcase.fast-api.workers.dev/pt/base64-encode-decode/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://convertcase.fast-api.workers.dev/fr/base64-encode-decode/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://convertcase.fast-api.workers.dev/de/base64-encode-decode/" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://convertcase.fast-api.workers.dev/tr/base64-encode-decode/" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://convertcase.fast-api.workers.dev/it/base64-encode-decode/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://convertcase.fast-api.workers.dev/base64-encode-decode/" />
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://convertcase.fast-api.workers.dev/json-yaml-converter/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://convertcase.fast-api.workers.dev/json-yaml-converter/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://convertcase.fast-api.workers.dev/es/json-yaml-converter/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://convertcase.fast-api.workers.dev/pt/json-yaml-converter/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://convertcase.fast-api.workers.dev/fr/json-yaml-converter/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://convertcase.fast-api.workers.dev/de/json-yaml-converter/" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://convertcase.fast-api.workers.dev/tr/json-yaml-converter/" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://convertcase.fast-api.workers.dev/it/json-yaml-converter/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://convertcase.fast-api.workers.dev/json-yaml-converter/" />
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://convertcase.fast-api.workers.dev/es/json-yaml-converter/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://convertcase.fast-api.workers.dev/json-yaml-converter/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://convertcase.fast-api.workers.dev/es/json-yaml-converter/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://convertcase.fast-api.workers.dev/pt/json-yaml-converter/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://convertcase.fast-api.workers.dev/fr/json-yaml-converter/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://convertcase.fast-api.workers.dev/de/json-yaml-converter/" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://convertcase.fast-api.workers.dev/tr/json-yaml-converter/" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://convertcase.fast-api.workers.dev/it/json-yaml-converter/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://convertcase.fast-api.workers.dev/json-yaml-converter/" />
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://convertcase.fast-api.workers.dev/pt/json-yaml-converter/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://convertcase.fast-api.workers.dev/json-yaml-converter/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://convertcase.fast-api.workers.dev/es/json-yaml-converter/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://convertcase.fast-api.workers.dev/pt/json-yaml-converter/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://convertcase.fast-api.workers.dev/fr/json-yaml-converter/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://convertcase.fast-api.workers.dev/de/json-yaml-converter/" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://convertcase.fast-api.workers.dev/tr/json-yaml-converter/" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://convertcase.fast-api.workers.dev/it/json-yaml-converter/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://convertcase.fast-api.workers.dev/json-yaml-converter/" />
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://convertcase.fast-api.workers.dev/fr/json-yaml-converter/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://convertcase.fast-api.workers.dev/json-yaml-converter/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://convertcase.fast-api.workers.dev/es/json-yaml-converter/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://convertcase.fast-api.workers.dev/pt/json-yaml-converter/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://convertcase.fast-api.workers.dev/fr/json-yaml-converter/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://convertcase.fast-api.workers.dev/de/json-yaml-converter/" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://convertcase.fast-api.workers.dev/tr/json-yaml-converter/" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://convertcase.fast-api.workers.dev/it/json-yaml-converter/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://convertcase.fast-api.workers.dev/json-yaml-converter/" />
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://convertcase.fast-api.workers.dev/de/json-yaml-converter/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://convertcase.fast-api.workers.dev/json-yaml-converter/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://convertcase.fast-api.workers.dev/es/json-yaml-converter/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://convertcase.fast-api.workers.dev/pt/json-yaml-converter/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://convertcase.fast-api.workers.dev/fr/json-yaml-converter/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://convertcase.fast-api.workers.dev/de/json-yaml-converter/" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://convertcase.fast-api.workers.dev/tr/json-yaml-converter/" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://convertcase.fast-api.workers.dev/it/json-yaml-converter/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://convertcase.fast-api.workers.dev/json-yaml-converter/" />
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://convertcase.fast-api.workers.dev/tr/json-yaml-converter/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://convertcase.fast-api.workers.dev/json-yaml-converter/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://convertcase.fast-api.workers.dev/es/json-yaml-converter/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://convertcase.fast-api.workers.dev/pt/json-yaml-converter/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://convertcase.fast-api.workers.dev/fr/json-yaml-converter/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://convertcase.fast-api.workers.dev/de/json-yaml-converter/" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://convertcase.fast-api.workers.dev/tr/json-yaml-converter/" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://convertcase.fast-api.workers.dev/it/json-yaml-converter/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://convertcase.fast-api.workers.dev/json-yaml-converter/" />
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://convertcase.fast-api.workers.dev/it/json-yaml-converter/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://convertcase.fast-api.workers.dev/json-yaml-converter/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://convertcase.fast-api.workers.dev/es/json-yaml-converter/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://convertcase.fast-api.workers.dev/pt/json-yaml-converter/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://convertcase.fast-api.workers.dev/fr/json-yaml-converter/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://convertcase.fast-api.workers.dev/de/json-yaml-converter/" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://convertcase.fast-api.workers.dev/tr/json-yaml-converter/" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://convertcase.fast-api.workers.dev/it/json-yaml-converter/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://convertcase.fast-api.workers.dev/json-yaml-converter/" />
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://convertcase.fast-api.workers.dev/html-entity-encoder-decoder/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://convertcase.fast-api.workers.dev/html-entity-encoder-decoder/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://convertcase.fast-api.workers.dev/es/html-entity-encoder-decoder/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://convertcase.fast-api.workers.dev/pt/html-entity-encoder-decoder/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://convertcase.fast-api.workers.dev/fr/html-entity-encoder-decoder/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://convertcase.fast-api.workers.dev/de/html-entity-encoder-decoder/" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://convertcase.fast-api.workers.dev/tr/html-entity-encoder-decoder/" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://convertcase.fast-api.workers.dev/it/html-entity-encoder-decoder/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://convertcase.fast-api.workers.dev/html-entity-encoder-decoder/" />
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://convertcase.fast-api.workers.dev/es/html-entity-encoder-decoder/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://convertcase.fast-api.workers.dev/html-entity-encoder-decoder/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://convertcase.fast-api.workers.dev/es/html-entity-encoder-decoder/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://convertcase.fast-api.workers.dev/pt/html-entity-encoder-decoder/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://convertcase.fast-api.workers.dev/fr/html-entity-encoder-decoder/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://convertcase.fast-api.workers.dev/de/html-entity-encoder-decoder/" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://convertcase.fast-api.workers.dev/tr/html-entity-encoder-decoder/" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://convertcase.fast-api.workers.dev/it/html-entity-encoder-decoder/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://convertcase.fast-api.workers.dev/html-entity-encoder-decoder/" />
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://convertcase.fast-api.workers.dev/pt/html-entity-encoder-decoder/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://convertcase.fast-api.workers.dev/html-entity-encoder-decoder/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://convertcase.fast-api.workers.dev/es/html-entity-encoder-decoder/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://convertcase.fast-api.workers.dev/pt/html-entity-encoder-decoder/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://convertcase.fast-api.workers.dev/fr/html-entity-encoder-decoder/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://convertcase.fast-api.workers.dev/de/html-entity-encoder-decoder/" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://convertcase.fast-api.workers.dev/tr/html-entity-encoder-decoder/" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://convertcase.fast-api.workers.dev/it/html-entity-encoder-decoder/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://convertcase.fast-api.workers.dev/html-entity-encoder-decoder/" />
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://convertcase.fast-api.workers.dev/fr/html-entity-encoder-decoder/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://convertcase.fast-api.workers.dev/html-entity-encoder-decoder/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://convertcase.fast-api.workers.dev/es/html-entity-encoder-decoder/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://convertcase.fast-api.workers.dev/pt/html-entity-encoder-decoder/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://convertcase.fast-api.workers.dev/fr/html-entity-encoder-decoder/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://convertcase.fast-api.workers.dev/de/html-entity-encoder-decoder/" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://convertcase.fast-api.workers.dev/tr/html-entity-encoder-decoder/" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://convertcase.fast-api.workers.dev/it/html-entity-encoder-decoder/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://convertcase.fast-api.workers.dev/html-entity-encoder-decoder/" />
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://convertcase.fast-api.workers.dev/de/html-entity-encoder-decoder/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://convertcase.fast-api.workers.dev/html-entity-encoder-decoder/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://convertcase.fast-api.workers.dev/es/html-entity-encoder-decoder/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://convertcase.fast-api.workers.dev/pt/html-entity-encoder-decoder/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://convertcase.fast-api.workers.dev/fr/html-entity-encoder-decoder/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://convertcase.fast-api.workers.dev/de/html-entity-encoder-decoder/" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://convertcase.fast-api.workers.dev/tr/html-entity-encoder-decoder/" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://convertcase.fast-api.workers.dev/it/html-entity-encoder-decoder/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://convertcase.fast-api.workers.dev/html-entity-encoder-decoder/" />
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://convertcase.fast-api.workers.dev/tr/html-entity-encoder-decoder/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://convertcase.fast-api.workers.dev/html-entity-encoder-decoder/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://convertcase.fast-api.workers.dev/es/html-entity-encoder-decoder/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://convertcase.fast-api.workers.dev/pt/html-entity-encoder-decoder/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://convertcase.fast-api.workers.dev/fr/html-entity-encoder-decoder/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://convertcase.fast-api.workers.dev/de/html-entity-encoder-decoder/" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://convertcase.fast-api.workers.dev/tr/html-entity-encoder-decoder/" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://convertcase.fast-api.workers.dev/it/html-entity-encoder-decoder/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://convertcase.fast-api.workers.dev/html-entity-encoder-decoder/" />
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://convertcase.fast-api.workers.dev/it/html-entity-encoder-decoder/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://convertcase.fast-api.workers.dev/html-entity-encoder-decoder/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://convertcase.fast-api.workers.dev/es/html-entity-encoder-decoder/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://convertcase.fast-api.workers.dev/pt/html-entity-encoder-decoder/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://convertcase.fast-api.workers.dev/fr/html-entity-encoder-decoder/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://convertcase.fast-api.workers.dev/de/html-entity-encoder-decoder/" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://convertcase.fast-api.workers.dev/tr/html-entity-encoder-decoder/" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://convertcase.fast-api.workers.dev/it/html-entity-encoder-decoder/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://convertcase.fast-api.workers.dev/html-entity-encoder-decoder/" />
+    <priority>0.7</priority>
+  </url>
 </urlset>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSON to YAML Converter | YAML to JSON Online | Uppercase</title>
+    <meta name="description" content="Convert between JSON and YAML formats instantly. Private, client-side data conversion.">
+    
+    <link rel="icon" type="image/svg+xml" href="../icon.svg">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <script src="../assets/js/app.js" defer></script>
+    <script src="../assets/js/vendor/js-yaml.min.js"></script>
+</head>
+
+<body data-toolset="refiner" data-tool="json-yaml-converter">
+    <div class="app-container">
+        <header class="app-header">
+            <h1>JSON <-> YAML Converter</h1>
+            <p>Switch between JSON and YAML configuration formats with zero effort.</p>
+            <p class="privacy-notice">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-label="Privacy Lock Icon" role="img">
+                    <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+                    <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+                </svg>
+                Privacy focused - all conversions happen locally on your device.
+            </p>
+        </header>
+
+        <main class="converter-wrapper">
+            <div class="toolbar">
+                <button id="json-to-yaml" class="btn btn-primary">JSON to YAML</button> <button id="yaml-to-json" class="btn btn-primary">YAML to JSON</button>
+            </div>
+
+            <div class="input-area">
+                <textarea id="text-input" placeholder="Type or paste your content here..."></textarea>
+            </div>
+
+            <div class="action-bar">
+                <div class="stats">
+                    <span id="char-count">0</span> Characters
+                    <span class="separator">|</span>
+                    <span id="word-count">0</span> Words
+                    <span class="separator">|</span>
+                    <span id="sentence-count">0</span> Sentences
+                    <span class="separator">|</span>
+                    <span id="line-count">0</span> Lines
+                </div>
+                <div class="actions">
+                    <button id="download" class="btn btn-secondary" title="Download Text">Download Text</button>
+                    <button id="copy" class="btn btn-secondary" title="Copy to Clipboard">Copy to Clipboard</button>
+                    <button id="clear" class="btn btn-danger" title="Clear Text">Clear</button>
+                </div>
+            </div>
+        </main>
+
+        <section class="content-section">
+            <article><h2>Convert Configuration Formats</h2><p>Whether you are working with Kubernetes manifests in YAML or API responses in JSON, our tool helps you switch between these popular formats without sending your data to any server.</p></article>
+        </section>
+
+        <footer class="app-footer">
+            <nav class="tool-directory">
+                <a href="../index.html">Case Converter</a> | 
+                <a href="../remove-duplicate-lines/index.html">Remove Duplicate Lines</a> | 
+                <a href="../remove-empty-lines/index.html">Remove Empty Lines</a> | 
+                <a href="../slugify-text/index.html">Slugify Text</a> | 
+                <a href="../extract-emails-urls/index.html">Extract Emails/URLs</a>
+            </nav>
+            <p>&copy; 2025 Convert Case App. Simple. Clear. Powerful.</p>
+        </footer>
+    </div>
+</body>
+
+</html>

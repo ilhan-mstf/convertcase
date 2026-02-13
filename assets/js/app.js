@@ -47,7 +47,7 @@ const TextProcessor = {
             'es': /^(a|ante|bajo|cabe|con|contra|de|desde|durante|en|entre|hacia|hasta|mediante|para|por|según|sin|so|sobre|tras|versus|via|el|la|los|las|un|una|unos|unas|y|o|pero|si|e|u)$/i,
             'pt': /^(a|ao|aos|as|à|às|ante|após|até|com|contra|de|da|do|das|dos|desde|em|entre|para|per|perante|por|sem|sob|sobre|trás|o|os|um|uma|uns|umas|e|ou|mas|se|na|no|nas|nos|pelo|pela|pelos|pelas|num|numa|nuns|numas)$/i,
             'fr': /^(à|au|aux|avec|ce|ces|dans|de|des|du|elle|en|et|eux|il|je|la|le|les|leur|lui|ma|mais|me|mes|moi|mon|ne|nos|notre|nous|on|ou|où|par|pas|pour|qu|que|qui|sa|se|ses|son|sur|ta|te|tes|toi|ton|tu|un|une|vos|votre|vous|c|d|j|l|m|n|s|t|y)$/i,
-            'de': /^(aber|als|am|an|auch|auf|aus|bei|bin|bis|bist|da|dad|darum|das|daß|dass|dein|deine|dem|den|der|des|dessen|dich|die|dies|diese|diesem|diesen|dieser|dieses|doch|dort|du|durch|ein|eine|einem|einen|einer|eines|er|es|euer|eure|für|hatte|hatten|hattest|hattet|hier|hinter|ich|ihr|ihre|im|in|ist|ja|jede|jedem|jeden|jeder|jedes|jener|jenes|jetzt|kann|kannst|können|könnt|machen|mein|meine|mit|muss|musst|musßt|müssen|müsst|nach|nachdem|nein|nicht|nun|oder|seid|sein|seine|sich|sie|sind|soll|sollen|sollst|sollt|sonst|soweit|sowie|und|unser|unsere|unter|vom|von|vor|wann|warum|was|weiter|weitere|wenn|wer|werde|werden|werdet|weshalb|wie|wieder|wieso|wir|wird|wirst|wo|worden|woher|wohin|zu|zum|zur|über)$/i,
+            'de': /^(aber|als|am|an|auch|auf|aus|bei|bin|bis|bist|da|dad|darum|das|daß|dass|dein|deine|dem|den|der|des|dessen|dich|die|dies|diese|diesem|diesen|dieser|dieses|doch|dort|du|durch|ein|eine|einem|einen|er|es|euer|eure|für|hatte|hatten|hattest|hattet|hier|hinter|ich|ihr|ihre|im|in|ist|ja|jede|jedem|jeden|jeder|jedes|jener|jenes|jetzt|kann|kannst|können|könnt|machen|mein|meine|mit|muss|musst|musßt|müssen|müsst|nach|nachdem|nein|nicht|nun|oder|seid|sein|seine|sich|sie|sind|soll|sollen|sollst|sollt|sonst|soweit|sowie|und|unser|unsere|unter|vom|von|vor|wann|warum|was|weiter|weitere|wenn|wer|werde|werden|werdet|weshalb|wie|wieder|wieso|wir|wird|wirst|wo|worden|woher|wohin|zu|zum|zur|über)$/i,
             'tr': /^(ve|ile|de|da|ki|mi|mı|mu|mü|ama|fakat|lakin|veya|ya|yahut|ise|için|gibi|kadar|göre|diye|doğru|karşı|üzere|sanki|oysa|madem|belki|çünkü|zira|yoksa|ancak|yalnız|tek|bir|bu|şu|o)$/i,
             'it': /^(a|agli|ai|al|all|alla|alle|allo|con|da|dagli|dai|dal|dall|dalla|dalle|dallo|di|degli|dei|del|dell|della|delle|dello|e|ed|i|il|in|la|le|lo|ma|nei|nel|nell|nella|nelle|nello|o|od|per|se|su|sugli|sui|sul|sull|sulla|sulle|sullo|tra|fra|un|una|uno)$/i
         };
@@ -108,6 +108,78 @@ const TextProcessor = {
         return text;
     },
 
+    // Phase 2: Developer Essentials
+    jsonPrettify: (text) => {
+        try {
+            const obj = JSON.parse(text);
+            return JSON.stringify(obj, null, 2);
+        } catch (e) {
+            throw new Error('Invalid JSON: ' + e.message);
+        }
+    },
+
+    jsonMinify: (text) => {
+        try {
+            const obj = JSON.parse(text);
+            return JSON.stringify(obj);
+        } catch (e) {
+            throw new Error('Invalid JSON: ' + e.message);
+        }
+    },
+
+    base64Encode: (text) => {
+        try {
+            return btoa(unescape(encodeURIComponent(text)));
+        } catch (e) {
+            throw new Error('Encoding failed: ' + e.message);
+        }
+    },
+
+    base64Decode: (text) => {
+        try {
+            return decodeURIComponent(escape(atob(text)));
+        } catch (e) {
+            throw new Error('Invalid Base64 string');
+        }
+    },
+
+    htmlEncode: (text) => {
+        const div = document.createElement('div');
+        div.textContent = text;
+        return div.innerHTML;
+    },
+
+    htmlDecode: (text) => {
+        const div = document.createElement('div');
+        div.innerHTML = text;
+        return div.textContent;
+    },
+
+    jsonToYaml: (text) => {
+        try {
+            const obj = JSON.parse(text);
+            if (typeof jsyaml !== 'undefined') {
+                return jsyaml.dump(obj);
+            }
+            // If js-yaml is not loaded yet (fallback or warning)
+            return 'Library js-yaml not loaded.';
+        } catch (e) {
+            throw new Error('Invalid JSON: ' + e.message);
+        }
+    },
+
+    yamlToJson: (text) => {
+        try {
+            if (typeof jsyaml !== 'undefined') {
+                const obj = jsyaml.load(text);
+                return JSON.stringify(obj, null, 2);
+            }
+            return 'Library js-yaml not loaded.';
+        } catch (e) {
+            throw new Error('Invalid YAML: ' + e.message);
+        }
+    },
+
     getStats: (text) => {
         return {
             charCount: text.length,
@@ -151,9 +223,19 @@ if (typeof document !== 'undefined') {
             updateStats();
         }
 
-        // Tool Initialization Logic
-        const toolset = document.body.getAttribute('data-toolset') || 'case';
-        const tool = document.body.getAttribute('data-tool');
+        function handleError(error) {
+            // Simple alert for now, can be improved to a toast/UI message
+            alert(error.message);
+        }
+
+        function safeExecute(fn) {
+            try {
+                const result = fn();
+                if (result !== undefined) setContent(result);
+            } catch (e) {
+                handleError(e);
+            }
+        }
 
         // Mapping button IDs to functions
         const buttonActions = {
@@ -170,10 +252,20 @@ if (typeof document !== 'undefined') {
             'remove-empty-lines': () => setContent(TextProcessor.removeEmptyLines(textInput.value)),
             'slugify': () => setContent(TextProcessor.slugify(textInput.value)),
             'extract-emails': () => setContent(TextProcessor.extractEntities(textInput.value, 'emails')),
-            'extract-urls': () => setContent(TextProcessor.extractEntities(textInput.value, 'urls'))
+            'extract-urls': () => setContent(TextProcessor.extractEntities(textInput.value, 'urls')),
+
+            // Phase 2 tools
+            'json-prettify': () => safeExecute(() => TextProcessor.jsonPrettify(textInput.value)),
+            'json-minify': () => safeExecute(() => TextProcessor.jsonMinify(textInput.value)),
+            'base64-encode': () => safeExecute(() => TextProcessor.base64Encode(textInput.value)),
+            'base64-decode': () => safeExecute(() => TextProcessor.base64Decode(textInput.value)),
+            'html-encode': () => safeExecute(() => TextProcessor.htmlEncode(textInput.value)),
+            'html-decode': () => safeExecute(() => TextProcessor.htmlDecode(textInput.value)),
+            'json-to-yaml': () => safeExecute(() => TextProcessor.jsonToYaml(textInput.value)),
+            'yaml-to-json': () => safeExecute(() => TextProcessor.yamlToJson(textInput.value))
         };
 
-        // Attach listeners to all present buttons that have a matching action
+        // Attach listeners
         Object.keys(buttonActions).forEach(id => {
             const btn = document.getElementById(id);
             if (btn) {
@@ -191,7 +283,7 @@ if (typeof document !== 'undefined') {
                 const url = window.URL.createObjectURL(blob);
                 const a = document.createElement('a');
                 a.href = url;
-                a.download = (tool || 'convertcase') + '-text.txt';
+                a.download = (document.body.getAttribute('data-tool') || 'convertcase') + '-text.txt';
                 document.body.appendChild(a);
                 a.click();
                 document.body.removeChild(a);
